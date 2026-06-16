@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Nazmul Islam · Portfolio</title>
+  <!-- Bootstrap 5 + Icons + Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-gradient" href="#home">
+        <i class="fas fa-code me-2"></i>Syed Nazmul Islam
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HOME / HERO with CAROUSEL ========== -->
+  <section id="home" class="hero-section">
+    <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=900&fit=crop');">
+          <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+              <span class="badge bg-primary bg-opacity-75 px-4 py-2 mb-3 rounded-pill">Welcome to My World</span>
+              <h1 class="display-2 fw-bold mb-3">Syed Nazmul Islam</h1>
+              <p class="lead fs-2 mb-3 typing-text">ICT Student &amp; Aspiring Software Engineer</p>
+              <p class="fs-5 mb-4 text-light opacity-75">Building innovative solutions for tomorrow's challenges</p>
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary btn-lg me-3 pulse-btn">Discover More <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Let's Talk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=900&fit=crop');">
+          <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+              <span class="badge bg-success bg-opacity-75 px-4 py-2 mb-3 rounded-pill">Innovation &amp; Quality</span>
+              <h1 class="display-2 fw-bold mb-3">Build &amp; Innovate</h1>
+              <p class="lead fs-2 mb-3">Full‑stack Enthusiast · Problem Solver</p>
+              <p class="fs-5 mb-4 text-light opacity-75">Passionate about crafting clean, user‑friendly solutions</p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-success btn-lg me-3 pulse-btn">View Projects <i class="fas fa-rocket ms-2"></i></a>
+                <a href="#resume" class="btn btn-outline-light btn-lg">Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item h-100" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&h=900&fit=crop');">
+          <div class="carousel-overlay d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+              <span class="badge bg-info bg-opacity-75 px-4 py-2 mb-3 rounded-pill">Continuous Learning</span>
+              <h1 class="display-2 fw-bold mb-3">Code · Learn · Grow</h1>
+              <p class="lead fs-2 mb-3">Student at MBSTU · ICT</p>
+              <p class="fs-5 mb-4 text-light opacity-75">Exploring the intersection of technology and design</p>
+              <div class="hero-buttons">
+                <a href="#education" class="btn btn-info btn-lg me-3 pulse-btn">My Journey <i class="fas fa-graduation-cap ms-2"></i></a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Connect</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ME ========== -->
+  <section id="about" class="py-5 section-gradient">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">About Me</h2>
+      <div class="row align-items-center g-5">
+        <div class="col-md-4 text-center" data-aos="fade-right" data-aos-duration="800">
+          <div class="profile-wrapper">
+            <!-- Replace 'profile.png' with your actual image path -->
+            <img src="profile.png" alt="Syed Nazmul Islam" class="img-fluid rounded-circle profile-image shadow-lg" />
+            <div class="profile-ring"></div>
+          </div>
+          <div class="social-links mt-4">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/weznaz/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/weznaz" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-8" data-aos="fade-left" data-aos-duration="800">
+          <p class="fs-5 lead-text">Hello! I'm Syed Nazmul Islam, a passionate ICT student at MBSTU with a deep love for software engineering. I thrive on building robust web applications, solving complex algorithmic challenges, and continuously expanding my technical horizons.</p>
+          <div class="accordion custom-accordion mt-4" id="aboutAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal"><i class="fas fa-user me-2"></i>Personal Information</button></h2>
+              <div id="collapsePersonal" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body"><i class="fas fa-user-circle me-2 text-primary"></i>Syed Nazmul Islam · 22 years · MBSTU, ICT</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkills"><i class="fas fa-code me-2"></i>Skills</button></h2>
+              <div id="collapseSkills" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body">
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Bootstrap 5</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Dart</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHobbies"><i class="fas fa-heart me-2"></i>Hobbies</button></h2>
+              <div id="collapseHobbies" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body"><i class="fas fa-chess-queen me-2 text-primary"></i>Chess · <i class="fas fa-book me-2 text-primary"></i>Reading Tech Blogs · <i class="fas fa-camera me-2 text-primary"></i>Photography · <i class="fas fa-gamepad me-2 text-primary"></i>Gaming</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoals"><i class="fas fa-rocket me-2"></i>Career Goals</button></h2>
+              <div id="collapseGoals" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                <div class="accordion-body"><i class="fas fa-target me-2 text-primary"></i>Become a full‑stack software engineer and contribute to impactful open‑source projects. Also passionate about building technology startups.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Education</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="100">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <h5 class="edu-title">MBSTU</h5>
+            <h6 class="edu-subtitle">B.Sc. in ICT (2023–2026)</h6>
+            <p class="edu-text">CGPA: 3.62 · Department of Information &amp; Communication Technology</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+            <h5 class="edu-title">HSC</h5>
+            <h6 class="edu-subtitle">Science (2020–2022)</h6>
+            <p class="edu-text">GPA: 5.00 · Dhaka Board</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="300">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h5 class="edu-title">SSC</h5>
+            <h6 class="edu-subtitle">Science (2018–2020)</h6>
+            <p class="edu-text">GPA: 5.00 · Dhaka Board</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="py-5 section-gradient-alt">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Projects</h2>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/0D6EFD/fff?text=StuDex');"></div>
+            <div class="project-body">
+              <h5>StuDex - Student Management</h5>
+              <p>All-in-one platform with classrooms, assignments, and finance tracking</p>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">Dart</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/6C757D/fff?text=Bantr');"></div>
+            <div class="project-body">
+              <h5>Bantr - Communication</h5>
+              <p>Student communication platform with messaging and community features</p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Socket.io</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/198754/fff?text=WhatsApp+Clone');"></div>
+            <div class="project-body">
+              <h5>WhatsApp Clone</h5>
+              <p>Android messaging app with real-time authentication and chat</p>
+              <div class="project-tech">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">Android</span>
+                <span class="tech-badge">Firebase</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/DC3545/fff?text=Bus+Timing');"></div>
+            <div class="project-body">
+              <h5>Bus Timing System</h5>
+              <p>C++ system managing bus schedules, routes, and passenger info</p>
+              <div class="project-tech">
+                <span class="tech-badge">C++</span>
+                <span class="tech-badge">Database</span>
+                <span class="tech-badge">SQL</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/0DCAF0/fff?text=E-commerce');"></div>
+            <div class="project-body">
+              <h5>E-commerce Platform</h5>
+              <p>Full-stack store with cart, payment, and inventory management</p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="project-card-modern">
+            <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/FFC107/fff?text=ML+Predictor');"></div>
+            <div class="project-body">
+              <h5>ML Predictor</h5>
+              <p>Linear regression model for house price prediction</p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">Scikit-learn</span>
+              </div>
+              <a href="https://github.com/weznaz" class="btn-github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Achievements</h2>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+            <h5>Programming Contests</h5>
+            <p>2nd place · Intra‑University CP Contest 2024</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-award"></i></div>
+            <h5>Academic Achievements</h5>
+            <p>Dean's List · 3 semesters (CGPA &gt; 3.62)</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+            <h5>Certifications</h5>
+            <p>Google IT Support · IBM Full‑Stack</p>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fas fa-users"></i></div>
+            <h5>Team Activities</h5>
+            <p>Lead Organizer · MBSTU Tech Fest 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section id="gallery" class="py-5 section-gradient-alt">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Gallery</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="100">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/1/500/400" alt="Gallery 1" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="200">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/2/500/400" alt="Gallery 2" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="300">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/3/500/400" alt="Gallery 3" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="400">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/4/500/400" alt="Gallery 4" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="500">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/5/500/400" alt="Gallery 5" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="600">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/6/500/400" alt="Gallery 6" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="700">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/7/500/400" alt="Gallery 7" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6" data-aos="flip-left" data-aos-delay="800">
+          <div class="gallery-modern">
+            <img src="https://picsum.photos/seed/8/500/400" alt="Gallery 8" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+<section id="resume" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" data-aos="fade-up">Resume</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10" data-aos="flip-up" data-aos-duration="1000">
+        <div class="resume-card">
+          <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+          <h4>Syed Nazmul Islam · Resume</h4>
+          <p class="text-muted">Click below to view or download my complete CV</p>
+          <div class="resume-buttons mb-4">
+            <a href="cv.pdf" download class="btn-resume-primary">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="cv.pdf" target="_blank" class="btn-resume-secondary">
+              <i class="fas fa-eye"></i> View CV
+            </a>
+          </div>
+          <!-- PDF Preview -->
+          <div class="pdf-preview" style="border: 2px solid #e9ecef; border-radius: 12px; overflow: hidden; height: 500px;">
+            <embed src="cv.pdf" type="application/pdf" width="100%" height="100%" />
+          </div>
+          <p class="text-muted mt-3 small">
+            <i class="fas fa-info-circle"></i> If the PDF doesn't load, 
+            <a href="cv.pdf" target="_blank">click here to open it directly</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="py-5 section-gradient">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+      <div class="row g-5">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-info">
+            <h4 class="mb-4">Let's Connect</h4>
+            <p class="mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>syednazmulislamramim@gmail.com</span></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><span>+880 1538 049945</span></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Dhaka, Bangladesh</span></div>
+            <div class="social-icons-modern mt-4">
+              <a href="#" class="social-icon-modern"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/weznaz/" class="social-icon-modern"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/weznaz" class="social-icon-modern"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon-modern"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon-modern"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="800">
+          <form class="contact-form-modern">
+            <div class="mb-3">
+              <label class="form-label"><i class="fas fa-user me-2"></i>Name</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Your name" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label"><i class="fas fa-envelope me-2"></i>Email</label>
+              <input type="email" class="form-control form-control-lg" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label"><i class="fas fa-tag me-2"></i>Subject</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label"><i class="fas fa-comment me-2"></i>Message</label>
+              <textarea class="form-control form-control-lg" rows="4" placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-brand">Syed Nazmul Islam</h5>
+          <p class="footer-text">Building the future, one line of code at a time.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Connect</h5>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/weznaz/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/weznaz"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copyright">&copy; 2026 Syed Nazmul Islam · Built with <i class="fas fa-heart text-danger"></i> &amp; Bootstrap 5</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + AOS + Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
